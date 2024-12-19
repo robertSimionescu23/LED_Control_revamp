@@ -1,0 +1,48 @@
+.navBarContainer{
+    height: 4vw;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-size: 30px;
+
+    background-color: #1f1f1f;
+}
+
+.logo{
+    margin-right: auto;
+    margin-left: 2%;
+    font-size: 40px;
+}
+
+.buttonArray{
+    margin-right: auto;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.typeButton{
+    font-size: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 70%;
+    width: 12%;
+    color: white;
+    background-color: #1f1f1f;
+    border: none;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+.utilityMenu{
+    margin-right: 2%;
+}
