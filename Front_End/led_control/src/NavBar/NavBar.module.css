@@ -21,8 +21,6 @@
 }
 
 .logoContainer{
-    height: 60px;
-    width: 300px;
     margin-right: auto;
     margin-left: 2%;
 
@@ -39,7 +37,7 @@
     padding: 2px;
 
     -webkit-text-stroke-color: transparent;
-    -webkit-text-stroke-width: 6px;
+    -webkit-text-stroke-width: 10px;
     -webkit-text-fill-color: hsl(33, 100%, 96%);
 
     /* A doubled color rainbow cone */
@@ -47,9 +45,10 @@
     background-clip: text;
 
     font-family: 'Orbitron';
+    font-size: 70px;
 
     animation: 5s spin linear infinite;
-  }
+}
 
 @keyframes spin {
     from{
@@ -62,7 +61,7 @@
 
 .buttonArray{
     height: 100%;
-    width: 50%;
+    width: 25%;
     margin-right: auto;
 
     display: flex;

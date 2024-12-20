@@ -21,9 +21,8 @@ function NavBar() {
         </div>
         <div className={styles.buttonArray}>
             <div className={styles.typeButton}><img src = "../../assets/ButtonIcons/Fill.png" width= "80px" height = "80px"/></div>
-            <button className={styles.typeButton}>Button</button>
-            <button className={styles.typeButton}>Button</button>
-            <button className={styles.typeButton}>Button</button>
+            <div className={styles.typeButton}><img src = "../../assets/ButtonIcons/Function.png" width= "80px" height = "80px"/></div>
+            <div className={styles.typeButton}><img src = "../../assets/ButtonIcons/Favorite.png" width= "80px" height = "80px"/></div>
         </div>
         <div className={styles.utilityMenu}>?</div>
     </section>
