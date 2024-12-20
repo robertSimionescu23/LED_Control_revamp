@@ -1,5 +1,10 @@
+@font-face{
+    font-family: Orbitron;
+    src: url('../../assets/fonts/Orbitron-ExtraBold.ttf')
+ }
+
 .navBarContainer{
-    height: 4vw;
+    height: 5vw;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -15,29 +20,71 @@
     background-color: #1f1f1f;
 }
 
-.logo{
+.logoContainer{
+    height: 60px;
+    width: 300px;
     margin-right: auto;
     margin-left: 2%;
-    font-size: 40px;
+
+    display: flex;
+    align-items: center;
+
+}
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+.logo {
+    padding: 2px;
+
+    -webkit-text-stroke-color: transparent;
+    -webkit-text-stroke-width: 6px;
+    -webkit-text-fill-color: hsl(33, 100%, 96%);
+
+    /* A doubled color rainbow cone */
+    background: conic-gradient(from var(--angle) at 50% 0%, #b927fcdc , #2c90fcdc , #b8fd33dc , #fec837dc , #fd1892dc, #b927fcdc , #2c90fcdc , #b8fd33dc , #fec837dc , #fd1892dc, #b927fcdc );
+    background-clip: text;
+
+    font-family: 'Orbitron';
+
+    animation: 5s spin linear infinite;
+  }
+
+@keyframes spin {
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle: 360deg;
+    }
 }
 
 .buttonArray{
-    margin-right: auto;
     height: 100%;
     width: 50%;
+    margin-right: auto;
+
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
 }
 
 .typeButton{
-    font-size: 30px;
-    margin-top: auto;
-    margin-bottom: auto;
     height: 70%;
     width: 12%;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 30px;
     color: white;
+
     background-color: #1f1f1f;
+
     border: none;
     border-radius: 5%;
     cursor: pointer;
