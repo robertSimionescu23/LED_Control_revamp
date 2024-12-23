@@ -1,31 +1,41 @@
 import styles from './NavBar.module.css'
+import {useState, useEffect} from 'react'
+import { Link } from "react-router-dom"
+import ButtonArray from './ButtonArray'
+
+
 
 function NavBar() {
-    return(
 
+    const [windowSize, setWindowSize] = useState(window.innerWidth)
+
+    const updateView = () => {
+        setWindowSize(window.innerWidth)
+    }
+
+    useEffect(() => {
+        window.addEventListener("resize", updateView)
+        return () => window.removeEventListener("resize", updateView);
+    });
+
+    return(
+    <>
+    {(windowSize > 960) ?
+    <section className={styles.navBarContainer}>
+        <div className={styles.logoContainer}>
+            <h1 className={styles.logo}>C-Control</h1>
+        </div>
+        <ButtonArray/>
+    </section>
+    :
     <section className={styles.navBarContainer}>
         <div className={styles.logoContainer}>
 
-        {/* <svg className = {styles.logo} width="61.079mm" height="11.38mm" version="1.1" viewBox="0 0 61.079 11.38" xmlns="http://www.w3.org/2000/svg">
-            <g transform="translate(-72.313 -57.622)">
-                <g transform="translate(7.2149 6.0277)" fill="#fff">
-                    <g fill="#fff">
-                        <path d="m67.381 62.724q-0.56444 0-1.0301-0.26811-0.45156-0.28222-0.73378-0.73378-0.26811-0.46567-0.26811-1.0301v-6.096q0-0.56444 0.26811-1.016 0.28222-0.46567 0.73378-0.73378 0.46567-0.28222 1.0301-0.28222h8.0998v2.0461h-7.62q-0.22578 0-0.35278 0.127-0.127 0.11289-0.127 0.35278v5.1082q0 0.22578 0.127 0.35278t0.35278 0.127h7.62v2.0461zm9.6097-3.1609v-2.0179h5.8279v2.0179zm9.2851 3.1609q-0.56444 0-1.0301-0.26811-0.45156-0.28222-0.73378-0.73378-0.26811-0.46567-0.26811-1.0301v-6.096q0-0.56444 0.26811-1.016 0.28222-0.46567 0.73378-0.73378 0.46567-0.28222 1.0301-0.28222h8.0998v2.0461h-7.62q-0.22578 0-0.35278 0.127-0.127 0.11289-0.127 0.35278v5.1082q0 0.22578 0.127 0.35278t0.35278 0.127h7.62v2.0461zm11.486 0q-0.53622 0-0.98778-0.26811-0.45156-0.28222-0.73378-0.73378-0.26811-0.45156-0.26811-0.98778v-4.2051q0-0.53622 0.26811-0.98778 0.28222-0.45156 0.73378-0.71967 0.45156-0.28222 0.98778-0.28222h4.318q0.55033 0 1.0019 0.28222 0.45155 0.26811 0.71966 0.71967 0.26811 0.45156 0.26811 0.98778v4.2051q0 0.53622-0.26811 0.98778-0.26811 0.45156-0.71966 0.73378-0.45156 0.26811-1.0019 0.26811zm0.09878-2.0038h4.1204q0.0282 0 0.0564-0.02822t0.0282-0.05644v-4.0076q0-0.02822-0.0282-0.05644t-0.0564-0.02822h-4.1204q-0.02822 0-0.05644 0.02822t-0.02822 0.05644v4.0076q0 0.02822 0.02822 0.05644t0.05644 0.02822zm9.3133 2.0038q-0.53622 0-0.98778-0.26811-0.45155-0.28222-0.73377-0.73378-0.26811-0.45156-0.26811-0.98778v-8.89h2.0179v8.7912q0 0.02822 0.0282 0.05644t0.0564 0.02822h1.6087v2.0038h-1.7216zm4.7696 0q-0.53622 0-0.98778-0.26811-0.45155-0.28222-0.73377-0.73378-0.26811-0.45156-0.26811-0.98778v-4.2051q0-0.53622 0.26811-0.98778 0.28222-0.45156 0.73377-0.71967 0.45156-0.28222 0.98778-0.28222h4.318q0.55033 0 1.0019 0.28222 0.45155 0.26811 0.71966 0.71967 0.26811 0.45156 0.26811 0.98778v4.2051q0 0.53622-0.26811 0.98778-0.26811 0.45156-0.71966 0.73378-0.45156 0.26811-1.0019 0.26811zm0.0988-2.0038h4.1204q0.0282 0 0.0565-0.02822 0.0282-0.02822 0.0282-0.05644v-4.0076q0-0.02822-0.0282-0.05644t-0.0565-0.02822h-4.1204q-0.0282 0-0.0564 0.02822t-0.0282 0.05644v4.0076q0 0.02822 0.0282 0.05644t0.0564 0.02822zm7.3519 2.0038v-6.1948q0-0.53622 0.26811-0.98778 0.28222-0.45156 0.73378-0.71967 0.46567-0.28222 1.0019-0.28222h4.5297v2.0038h-4.445q-0.0282 0-0.0564 0.02822t-0.0282 0.05644v6.096z"
-                         fill="#fff" aria-label="C-Color
-                        "/>
-                    </g>
-                </g>
-            </g>
-        </svg> */}
         <h1 className={styles.logo}>C-Control</h1>
         </div>
-        <div className={styles.buttonArray}>
-            <div className={styles.typeButton}><img src = "../../assets/ButtonIcons/Fill.png" width= "80px" height = "80px"/></div>
-            <div className={styles.typeButton}><img src = "../../assets/ButtonIcons/Function.png" width= "80px" height = "80px"/></div>
-            <div className={styles.typeButton}><img src = "../../assets/ButtonIcons/Favorite.png" width= "80px" height = "80px"/></div>
-        </div>
-        <div className={styles.utilityMenu}>?</div>
     </section>
+    }
+    </>
     )
 }
 
