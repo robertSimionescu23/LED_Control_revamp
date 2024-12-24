@@ -1,4 +1,3 @@
-import './App.css'
 import Home from './Home/Home'
 import {HashRouter as Router, Routes, Route} from 'react-router-dom'
 

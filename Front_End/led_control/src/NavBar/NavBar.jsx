@@ -1,41 +1,21 @@
 import styles from './NavBar.module.css'
-import {useState, useEffect} from 'react'
+import ButtonArray from '../Buttons/ButtonArray'
+import useIsMobile from '../Hooks/useIsMobile'
 import { Link } from "react-router-dom"
-import ButtonArray from './ButtonArray'
-
 
 
 function NavBar() {
 
-    const [windowSize, setWindowSize] = useState(window.innerWidth)
-
-    const updateView = () => {
-        setWindowSize(window.innerWidth)
-    }
-
-    useEffect(() => {
-        window.addEventListener("resize", updateView)
-        return () => window.removeEventListener("resize", updateView);
-    });
-
     return(
-    <>
-    {(windowSize > 960) ?
     <section className={styles.navBarContainer}>
-        <div className={styles.logoContainer}>
+        <Link to = "/" className={styles.logoContainer}>
             <h1 className={styles.logo}>C-Control</h1>
-        </div>
-        <ButtonArray/>
+        </Link>
+        <ButtonArray
+            // We want the buttons to not show on the navigation bar if the device is mobile, as they will show up in the footer.
+            show = {!useIsMobile()}
+        />
     </section>
-    :
-    <section className={styles.navBarContainer}>
-        <div className={styles.logoContainer}>
-
-        <h1 className={styles.logo}>C-Control</h1>
-        </div>
-    </section>
-    }
-    </>
     )
 }
 

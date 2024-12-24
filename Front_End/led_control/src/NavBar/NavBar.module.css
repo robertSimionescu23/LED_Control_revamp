@@ -9,12 +9,13 @@
     color: white;
     font-size: 30px;
 
-    /* background-color: #1f1f1f; */
     background-image: linear-gradient(#1f1f1f, #2f2f2f)
 }
 
 .logoContainer{
-    margin-left: 2%;
+    margin-left: 5%;
+
+    text-decoration: none;
 
     display: flex;
     align-items: center;
@@ -56,7 +57,11 @@
 
 
 @media all and (max-width: 960px) {
+    .logoContainer{
+        margin: 0;
+    }
     .navBarContainer{
+        width: 100%;
         justify-content: center;
     }
 
