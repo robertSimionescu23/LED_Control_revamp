@@ -1,4 +1,7 @@
 import Home from './Home/Home'
+import Fill from './FillPage/Fill'
+import Favorites from './Favorites/Favorites'
+import Functions from './FunctionsPage/Functions'
 import {HashRouter as Router, Routes, Route} from 'react-router-dom'
 
 function App() {
@@ -6,9 +9,9 @@ function App() {
         <Router>
             <Routes>
                 <Route path = "/" element = {<Home/>}/>
-                <Route path = "/fill" element = {<Home/>}/>
-                <Route path = "/functiions" element = {<Home/>}/>
-                <Route path = "/favorites" element = {<Home/>}/>
+                <Route path = "/fill" element = {<Fill/>}/>
+                <Route path = "/function" element = {<Functions/>}/>
+                <Route path = "/favorite" element = {<Favorites/>}/>
                 <Route path = "/help" element = {<Home/>}/>
             </Routes>
         </Router>

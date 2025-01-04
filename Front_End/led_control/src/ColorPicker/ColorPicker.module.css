@@ -1,0 +1,87 @@
+:root{
+    --gradientColor: 0;
+}
+
+.colorContainer{
+    width: 60%;
+
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+    background-color: #3f3f3f;
+
+    display: flex;
+    flex-direction: row;
+
+    border-radius: 2vw;
+    margin-top: 2%;
+}
+.canvasContainers{
+    display: flex;
+    flex-direction: column;
+
+    margin-right: 3%;
+}
+
+.SLPickerContainer{
+    position: relative;
+}
+
+.SLSelector{
+    position: absolute;
+    top: -11.5px;
+    left: -11.5px;
+    height: 20px;
+    width : 20px;
+    background-color: transparent;
+    border: solid 3px gray;
+    border-radius: 50%;
+}
+
+.SLPicker{
+    background-size: cover;
+}
+.separator{
+    height: 2em;
+}
+
+.dataAndControl{
+
+}
+
+.huePick{
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+}
+
+.huePickerContainer{
+    position: relative;
+}
+
+.hueSelector{
+    height: 40px;
+    width: 20px;
+    margin: 0;
+    padding: 0;
+
+    position: absolute;
+    top: 0;
+    left: -16px;
+
+    background-color: transparent;
+    border-radius: 5px;
+    border-width : 6px;
+    border-style : solid;
+    border-color : rgb(138, 138, 138);
+}
+
+.testdiv3{
+    height: 50px;
+    width: 50px;
+    background-color: hsl(0, 100%, 100%);
+}

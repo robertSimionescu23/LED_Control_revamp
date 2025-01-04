@@ -1,6 +1,7 @@
 .navBarContainer{
     margin: 0;
     padding: 0;
+    padding-top: 5px;
 
     display: flex;
     flex-direction: row;
@@ -13,7 +14,7 @@
 }
 
 .logoContainer{
-    margin-left: 5%;
+    margin-left: 4em;
 
     text-decoration: none;
 
@@ -39,7 +40,7 @@
     background-clip: text;
 
     font-family: 'Orbitron';
-    font-size: calc(30px + 1vw);
+    font-size: calc(1.8em - 1vh);
 
     cursor: pointer;
 

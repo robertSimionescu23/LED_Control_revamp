@@ -12,3 +12,8 @@ html{
     font-family: Orbitron;
     src: url('../../assets/fonts/Orbitron-ExtraBold.ttf')
  }
+
+ @font-face{
+    font-family: Robot;
+    src: url('../../assets/fonts/RobotoFlex-Regular.ttf')
+ }

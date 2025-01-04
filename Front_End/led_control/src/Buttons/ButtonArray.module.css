@@ -1,51 +1,62 @@
+.buttonContainer{
+    display: flex;
+    flex-direction: row;
+    margin-right: 2%;
+}
 .buttonArray{
+    z-index: 10;
     margin:0;
     padding: 0;
-    margin-top: auto;
-    margin-bottom: auto;
     margin-right: 5%;
+
+    border-radius: 0.8em;
 
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
+    background-color: #3f3f3f;
 }
 
-.buttonImage > *{
-    min-height: 40px;
-    min-width:  40px;
-    max-height: 7vh;
-    max-width:  7vh;
+.buttonLinkEl{
+    height: calc(1.8em + 2%);
+    text-decoration: none;
+}
+
+div.buttonLinkEl{
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.buttonImage{
+    height: 1.8em;
+    width: 1.8em;
+    padding: 1%;
+
     margin-right: 20px;
     margin-left: 20px;
+
+    border-radius: 0.5em;
 
     cursor: pointer;
     border-radius: 1vh;
 }
 
-.buttonImage:hover > *{
+.buttonImage:hover {
     background-color: gray;
-
 }
 
-@media all and (max-width: 960px) {
-    .navBarContainer{
-        justify-content: center;
-    }
-    .buttonArray{
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        justify-content: center;
-        background-color: #2f2f2f;
-    }
-    .buttonImage > *{
-        min-height: 50px;
-        min-width:  50px;
-        margin-right: 8px;
-        margin-left: 8px;
-        border-radius: 1vw;
-    }
-
- }
+.mobileButtons{
+    position: fixed;
+    display: flex;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 1%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3f3f3f;
+}
