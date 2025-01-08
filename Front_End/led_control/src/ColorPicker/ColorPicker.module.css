@@ -33,18 +33,17 @@
 
 .SLSelector{
     position: absolute;
+    margin: 0;
+    padding: 0;
     top: -11.5px;
     left: -11.5px;
     height: 20px;
     width : 20px;
     background-color: transparent;
-    border: solid 3px gray;
+    border: solid 5px gray;
     border-radius: 50%;
 }
 
-.SLPicker{
-    background-size: cover;
-}
 .separator{
     height: 2em;
 }
@@ -83,5 +82,23 @@
 .testdiv3{
     height: 50px;
     width: 50px;
+    background-color: hsl(0, 100%, 100%);
+}
+
+.testLed{
+    height: 50px;
+    width: 50px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+
     background-color: hsl(0, 100%, 100%);
 }
