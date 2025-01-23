@@ -1,0 +1,62 @@
+.buttonContainer{
+    display: flex;
+    flex-direction: row;
+    margin-right: 2%;
+}
+.buttonArray{
+    z-index: 10;
+    margin:0;
+    padding: 0;
+    margin-right: 5%;
+
+    border-radius: 0.8em;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #3f3f3f;
+}
+
+.buttonLinkEl{
+    height: calc(1.8em + 2%);
+    text-decoration: none;
+}
+
+div.buttonLinkEl{
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.buttonImage{
+    height: 1.8em;
+    width: 1.8em;
+    padding: 1%;
+
+    margin-right: 20px;
+    margin-left: 20px;
+
+    border-radius: 0.5em;
+
+    cursor: pointer;
+    border-radius: 1vh;
+}
+
+.buttonImage:hover {
+    background-color: gray;
+}
+
+.mobileButtons{
+    position: fixed;
+    display: flex;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 1%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3f3f3f;
+}

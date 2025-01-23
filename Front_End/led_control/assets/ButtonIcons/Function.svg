@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="58.211254mm"
+   height="35.401741mm"
+   viewBox="0 0 58.211254 35.401741"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3">
+      <rect
+         style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none"
+         id="rect3"
+         width="57.862732"
+         height="37.326626"
+         x="9.0410509"
+         y="30.352098"
+         ry="17.378126"
+         rx="0" />
+    </clipPath>
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(-86.79365,-68.624289)">
+    <g
+       id="g3"
+       clip-path="url(#clipPath3)"
+       transform="matrix(1.4552816,0,0,1.8383823,61.795471,-20.393337)">
+      <ellipse
+         style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10.1;stroke-dasharray:none"
+         id="path2-1"
+         cx="-37.177555"
+         cy="68.421715"
+         rx="14.065635"
+         ry="14.065638"
+         transform="scale(-1,1)" />
+      <ellipse
+         style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10.1;stroke-dasharray:none"
+         id="path2-8"
+         cx="37.177555"
+         cy="68.421715"
+         rx="9.4256134"
+         ry="9.4256163" />
+      <ellipse
+         style="fill:none;stroke:#ffffff;stroke-width:2.02488;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10.1;stroke-dasharray:none"
+         id="path2"
+         cx="37.177555"
+         cy="68.421715"
+         rx="18.987556"
+         ry="18.987558" />
+    </g>
+  </g>
+</svg>

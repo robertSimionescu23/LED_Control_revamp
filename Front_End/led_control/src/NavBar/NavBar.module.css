@@ -1,0 +1,72 @@
+.navBarContainer{
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    color: white;
+    font-size: 30px;
+
+    background-image: linear-gradient(#1f1f1f, #2f2f2f)
+}
+
+.logoContainer{
+    margin-left: 4em;
+
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+
+}
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+.logo {
+    padding: 0.5vh;
+    margin: 0;
+
+    -webkit-text-stroke-color: transparent;
+    -webkit-text-stroke-width: 1vh;
+    -webkit-text-fill-color: hsl(33, 100%, 96%);
+
+    /* A doubled color rainbow cone */
+    background: conic-gradient(from var(--angle) at 50% 0%, #b927fcdc , #2c90fcdc , #b8fd33dc , #fec837dc , #fd1892dc, #b927fcdc , #2c90fcdc , #b8fd33dc , #fec837dc , #fd1892dc, #b927fcdc );
+    background-clip: text;
+
+    font-family: 'Orbitron';
+    font-size: calc(1.8em - 1vh);
+
+    cursor: pointer;
+
+    animation: 5s spin linear infinite;
+}
+
+@keyframes spin {
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle: 360deg;
+    }
+}
+
+
+@media all and (max-width: 960px) {
+    .logoContainer{
+        margin: 0;
+    }
+    .navBarContainer{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .logo{
+        font-size: 40px ;
+    }
+ }

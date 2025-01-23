@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="50.000313mm"
+   height="52.642639mm"
+   viewBox="0 0 50.000313 52.642639"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="Power.svg"
+   inkscape:export-filename="..\assets\ButtonIcons\Power.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     inkscape:zoom="2.0485264"
+     inkscape:cx="485.47091"
+     inkscape:cy="792.52089"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-115.01353,-175.8385)">
+    <g
+       id="g3">
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:4.23962;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0.7;stroke-dasharray:none"
+         id="path3"
+         sodipodi:type="arc"
+         sodipodi:cx="-103.01816"
+         sodipodi:cy="224.14957"
+         sodipodi:rx="14.597351"
+         sodipodi:ry="14.597351"
+         sodipodi:start="0"
+         sodipodi:end="5.2359878"
+         sodipodi:arc-type="arc"
+         d="m -88.420807,224.14957 a 14.597351,14.597351 0 0 1 -10.819279,14.09996 14.597351,14.597351 0 0 1 -16.419744,-6.80129 14.597351,14.597351 0 0 1 2.31979,-17.62056 14.597351,14.597351 0 0 1 17.620558,-2.31979"
+         sodipodi:open="true"
+         transform="rotate(-59.264305)" />
+      <rect
+         style="fill:none;stroke:#ffffff;stroke-width:4.07362;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0.7;stroke-dasharray:none"
+         id="rect3"
+         width="0.63671857"
+         height="12.660415"
+         x="139.86234"
+         y="186.53363"
+         ry="0.13912542" />
+    </g>
+  </g>
+</svg>
